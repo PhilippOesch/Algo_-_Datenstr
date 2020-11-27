@@ -9,7 +9,7 @@ public class Textanalyse {
 
         //Wort Analyse
         for (int i = 0; i < args.length; i++) {
-            System.out.println("Länge Aurgument " + i + ": " + args[i].length());
+            System.out.println("Länge Argument " + i + ": " + args[i].length());
 
             // Buchtaben Analyse
             for (int y = 0; y < args[i].length(); y++) {

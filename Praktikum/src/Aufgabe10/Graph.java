@@ -3,6 +3,7 @@ package Aufgabe10;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Graph {
     HashMap<String, Node> dictionary;
@@ -66,6 +67,7 @@ public class Graph {
                     int edgeweight= currentmin+ edge.getWeight();
                     if( edgeweight< m.get(nodeName)){
                         m.replace(nodeName, edgeweight);
+                        dictionary.get(nodeName).setWeight(edgeweight);
                     }
                     if(edgeweight < nodeMin){
                         nodeMin= edgeweight;
